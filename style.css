@@ -209,3 +209,38 @@ body {
   font-weight: 700;
   pointer-events: none;
 }
+
+/* -------------- Tribute ------------*/
+
+.tribute {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 999;
+  overflow: hidden;
+  transition: opacity 1s ease-out;
+}
+
+.tribute_img {
+  opacity: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.show_tribute {
+  transition: opacity 2s ease-out;
+  opacity: 1;
+}
+
+.hide_tribute {
+  opacity: 0;
+}
+
+.overflow_hidden {
+  overflow: hidden;
+}
+
+.display_none {
+  display: none;
+}

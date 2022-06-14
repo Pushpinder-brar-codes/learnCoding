@@ -39,8 +39,9 @@
 }
 
 .about_img_container img {
-  max-width: 150px;
-  width: 100%;
+  object-fit: cover;
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
 }
 

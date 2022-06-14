@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="body overflow_hidden">
+    <div class="tribute">
+        <img class="tribute_img" src="./assets/maxresdefault.jpg" alt="tribute">
+    </div>
     <div class="main">
         <div class="navbar">
             <div class="links">
@@ -41,7 +44,7 @@
             </div>
         </div>
     </div>
-    <div class="section_one">
+    <div id="resources" class="section_one">
         <div class="section_one_main">
             <p class="section_one_main_heading">ALL RESOURCES -></p>
             <hr />
@@ -112,6 +115,21 @@
         </div>
     </footer>
     <script src="/script.js">
+
+    </script>
+    <script>
+        let start_now = document.querySelector(".start_now")
+
+        start_now.onclick = function (e) {
+
+            e.preventDefault();
+            let dest = document.querySelector(".section_one")
+
+            dest.scrollIntoView({
+                behavior: 'smooth'
+            })
+
+        }
 
     </script>
 </body>
