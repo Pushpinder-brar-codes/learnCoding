@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --link_clicked: #df3ef9;
+  --bg: #ededed;
+  --light-bg: #fffcfc;
+  --navbar_bg: #427ea3;
+}
+
+img {
+  width: 100%;
+  max-width: 200px;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #ededed;
+}
+
+.navbar {
+  background-color: var(--navbar_bg);
+  padding-block: 1em;
+  padding-inline: 2em;
+  position: relative;
+}
+
+.links {
+  margin: 0 auto;
+  max-width: 1150px;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.twitter {
+  position: absolute;
+  width: 60px;
+  right: 20px;
+  top: 17px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+/*----------------------------------------*/
+
+.outer_container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: var(--light-bg);
+  padding: 4em;
+}
+
+.header_inner {
+  display: flex;
+  gap: 2em;
+}
+
+.header_name {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.header img {
+  max-width: 150px;
+}
+
+/*--------------------------------------------*/
+
+.section {
+  margin-block: 4em;
+}
+
+.section_heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.7em;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(179, 179, 179);
+  margin-bottom: 2em;
+}
+
+.slide {
+  background-color: #fff;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 10px;
+  max-width: 200px;
+  align-items: center;
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(191, 191, 191, 1);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(191, 191, 191, 1);
+  box-shadow: 3px 3px 10px 0px rgba(191, 191, 191, 1);
+  transition: all 100ms ease-out;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.slide:hover {
+  -webkit-box-shadow: 3px 3px 13px 0px rgba(125, 125, 125, 1);
+  -moz-box-shadow: 3px 3px 13px 0px rgba(125, 125, 125, 1);
+  box-shadow: 3px 3px 13px 0px rgba(125, 125, 125, 1);
+  transform: scale(1.01);
+}
+
+.mySwiper {
+  padding-top: 1em !important;
+  padding-bottom: 3em !important;
+  padding-right: 2em !important;
+}
+
+.card_line {
+  margin-bottom: 0.5em;
+}
+
+.slide_link {
+  text-decoration: none;
+  color: black;
+}
+
+.slide_source_name {
+  margin-top: 0.9em;
+  font-weight: 700;
+  align-self: flex-start;
+}
+
+.slide_source_name span {
+  font-weight: 200;
+}

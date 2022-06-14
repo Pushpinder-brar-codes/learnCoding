@@ -1,0 +1,79 @@
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(210, 165, 252);
+}
+
+.about_container {
+  padding: 2em;
+}
+
+.about_container > h1 {
+  text-align: center;
+  margin-bottom: 2em;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.about_profile_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.profile {
+  display: flex;
+  gap: 2em;
+  background-color: rgb(255, 255, 255);
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.about_img_container img {
+  max-width: 150px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about_details_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.about_details_container h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.about_details_container > p {
+  color: rgb(84, 67, 67);
+}
+
+.socials {
+  justify-self: end;
+  margin-top: 2em;
+}
+
+.socials > * {
+  background-color: aquamarine;
+  margin-right: 1em;
+  padding-block: 0.5em;
+  padding-inline: 0.7em;
+  text-decoration: none;
+  color: rgb(19, 34, 82);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
