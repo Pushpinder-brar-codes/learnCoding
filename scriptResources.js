@@ -1,6 +1,4 @@
 import {
-  doc,
-  getDoc,
   getFirestore,
   collection,
   getDocs,
@@ -18,6 +16,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 let item = localStorage.getItem("clickedItem");
+localStorage.setItem("showTribute", "n");
 
 const db = getFirestore();
 const section = document.getElementById("section");
@@ -115,4 +114,8 @@ getData().then(() => {
       prevEl: ".swiper-button-prev",
     },
   });
+});
+
+window.onbeforeunload((e) => {
+  localStorage.removeItem("showTribute");
 });
