@@ -35,7 +35,7 @@ const getData = async () => {
     console.log(doc.id, " => ", doc.data());
     let data = doc.data();
     if (data.name == "Best YouTube Videos") {
-      // header_desc.innerText = data.desc;
+      header_desc.innerText = data.desc;
       section.innerHTML += `
             <p class="section_heading">
             ${data.name}

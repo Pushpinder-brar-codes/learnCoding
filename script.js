@@ -1,6 +1,8 @@
 let cards = document.querySelectorAll(".card");
 console.log(cards);
 
+alert("javascript working");
+
 cards.forEach((item) => {
   item.addEventListener("click", (event) => {
     let selected_item = event.target.id;
@@ -12,9 +14,6 @@ cards.forEach((item) => {
 let body = document.querySelector(".body");
 let tribute_div = document.querySelector(".tribute");
 let tribute_img = document.querySelector(".tribute_img");
-// body.addEventListener('load',(e)=>{
-//    location.href = "/tribute.html";
-// })
 
 setTimeout(() => {
   tribute_img.classList.add("show_tribute");
