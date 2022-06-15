@@ -1,8 +1,6 @@
 let cards = document.querySelectorAll(".card");
 console.log(cards);
 
-alert("javascript working");
-
 cards.forEach((item) => {
   item.addEventListener("click", (event) => {
     let selected_item = event.target.id;
